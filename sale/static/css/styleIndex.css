@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div{
+    min-height:40px
+}
+.box{
+    height:100%;
+}
+.top{
+    width:100%;
+    background-color: rgba(207,206,220);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(9,7,35);
+    padding-top:6px;
+}
+.middle{
+    height:933px;
+}
+.left{
+    float:left;
+    width:15%;
+    height:100%;
+    background-color:rgba(220,220,220);
+    text-align: center;
+
+}
+.right{
+    height:100%;
+}
+.usertext{
+    color: rgba(9,7,35);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding:10px 0;
+}
+.welcometext{
+    color: rgba(9,7,35);
+    font-size: 1rem;
+    padding: 0 0 10px 0;
+}
+.leftbutton1{
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    text-align: center;
+    padding-top:15px;
+    font-weight: bold;
+    color:cornflowerblue;
+
+}
+.leftbutton2{
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    text-align: center;
+    padding-top:15px;
+    font-weight: bold;
+    color:cornflowerblue;
+}
+.input{
+    outline: none;
+    width: 400px;
+    height:35px;
+    background: none;
+    background-color: rgba(217,216,230);
+    border: .1rem solid #7d74ff;
+    border-radius:10px;
+    color: rgba(9, 7, 35);
+    font-size: 1rem;
+    margin-bottom:20px;
+}
+input::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+button{
+    margin-left: 125px;
+    margin-top: 20px;
+    width:150px;
+    height: 50px;
+    font-size:1rem;
+    background-color:rgba(187,156,200);
+    border-radius:10px;
+    border-width: 1px;
+}

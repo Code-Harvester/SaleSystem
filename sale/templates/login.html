@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录界面</title>
+    <link rel="stylesheet" href={% static '/css/styleLogin.css' %}/>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="content">
+                <div class="switch">
+                    <h1 id="login">登录</h1>
+                </div>
+
+                <form action="/login/check/" method="post">
+                {% csrf_token %}
+                    <div id="userName" class="input" aria-placeholder="用户名"><input id="id_username" name="userid" type="text" value={{ userid }}></div>
+                    <div id="password" class="input" aria-placeholder="密码"><input id="id_password" name="password" type="password" value={{ password }}></div>
+
+                    <p>
+                        <input type="checkbox" name="remember">一天免登录</input>
+                    </p>
+                    <button type="submit" class="button" >登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.js"></script>
+<script>
+
+    $('.input input').on('focus',function () {
+        $(this).parent().addClass('focus');
+    })
+
+    $('.input input').on('blur',function () {
+        if($(this).val() === '')
+            $(this).parent().removeClass('focus');
+    })
+</script>
+
+</html>

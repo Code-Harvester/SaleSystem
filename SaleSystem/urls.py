@@ -20,5 +20,8 @@ from sale import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('test/', views.test),
-    path('login/', views.login)
+    path('login/', views.login),
+    path('index/', views.index),
+    path('goods/search/', views.goodssearch),
+    path('goods/add/', views.goodsadd)
 ]
