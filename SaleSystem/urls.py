@@ -22,6 +22,11 @@ urlpatterns = [
     path('test/', views.test),
     path('login/', views.login),
     path('index/', views.index),
-    path('goods/search/', views.goodssearch),
-    path('goods/add/', views.goodsadd)
+    path('goods/search/', views.goods_search),
+    path('goods/add/', views.goods_add),
+    path('goods/sale/', views.goods_sale),
+    path('goods/delete/', views.goods_delete),
+    path('goods/storage/', views.goods_storage),
+    path('goods/loss/', views.goods_loss),
+    path('sale/statistics/', views.sale_statistics),
 ]

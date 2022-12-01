@@ -20,7 +20,7 @@ class GOODSINFO(models.Model):  # 商品信息表
     Price = models.DecimalField(verbose_name='单价', max_digits=6, decimal_places=2)  # 单价
     Cost = models.DecimalField(verbose_name='成本', max_digits=6, decimal_places=2)  # 成本
     Type = models.CharField(verbose_name='类别', max_length=16)  # 类别
-    Stock = models.IntegerField(verbose_name='库存')  # 当前库存
+    Stock = models.IntegerField(verbose_name='库存', default=0)  # 当前库存
     QGPeriod = models.IntegerField(verbose_name='保质期')  # 保质期(年)
     Note = models.CharField(verbose_name='备注', max_length=128, null=True)  # 备注
 

@@ -50,7 +50,7 @@
     $(document).ready(function(){
         $(".list-title").click(function(){   //为左边的导航条注册事件 折叠效果
             var parent=$(this).parent();  //寻找当前的父容器
-            var re=parent.css("height")!="35px"?"35px":"auto";
+            var re=parent.css("height")!=="35px"?"35px":"auto";
             parent.css("height",re);
         });
     });
